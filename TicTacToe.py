@@ -69,7 +69,7 @@ def tic_tac_toe():
         print(f'{player_turn} - {side[player_turn]}')
         player_references(board, player_turn, side, player_choice(board))
         win = win_conditions(board, player_turn)
-        if win:
+        if win or player.turn == False:
             break
 
 
